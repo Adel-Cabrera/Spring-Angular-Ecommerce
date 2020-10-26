@@ -1,0 +1,5 @@
+package com.darkonnen.ecommerce.entity;
+
+public class ProductCategory {
+
+}

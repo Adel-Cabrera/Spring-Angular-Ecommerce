@@ -1,0 +1,18 @@
+package com.darkonnen.ecommerce.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name = "product_category")
+
+//@Data -> generates error, so we use Getter & Setter instead
+@Setter
+@Getter
+
+public class ProductCategory {
+
+}

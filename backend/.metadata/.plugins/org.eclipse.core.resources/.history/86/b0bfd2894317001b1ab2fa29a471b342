@@ -1,0 +1,52 @@
+package com.darkonnen.ecommerce.entity;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table(name = "product")
+@Data // lombok dependency
+public class Product {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column("id")
+	private Long id;
+
+	@Column("sku")
+	private String sku;
+
+	@Column("name")
+	private String name;
+
+	@Column("description")
+	private String description;
+
+	@Column("unit_price")
+	private BigDecimal unitPrice;
+
+	@Column("image_url")
+	private String imageUrl;
+
+	@Column("active")
+	private boolean active;
+
+	@Column("units_in_stock")
+	private int unitsInStock;
+	
+	@Column("date_created")
+	private Date dateCreated;
+	
+	@Column("last_updated")
+	private Date lastUpdated;
+
+}
