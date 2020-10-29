@@ -17,3 +17,15 @@ ng generate class common/product
 # Create Angular service
 
 ng generate service services/product
+
+# Install bootstrap in angular project
+
+npm install bootstrap
+
+# <Optional> fix dependency issues
+
+npm audit fix
+
+# Install fontawesome
+
+npm install @fortawesome/fontawesome-free
